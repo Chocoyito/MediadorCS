@@ -1,6 +1,6 @@
 ﻿namespace Mediator;
 
-public abstract class Colega : IColega
+public class Colega : IColega
 {
     private IMediator mediator;
 
@@ -14,5 +14,8 @@ public abstract class Colega : IColega
         this.mediator.Enviar(mensaje, this);
     }
 
-    public abstract void Recibir(string mensaje);
+    public virtual void Recibir(string mensaje)
+    {
+        Console.WriteLine("Mensaje del usuario: " + mensaje);
+    }
 }
