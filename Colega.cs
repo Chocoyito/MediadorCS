@@ -2,16 +2,16 @@
 
 public class Colega : IColega
 {
-    private IMediator mediator;
+    private IMediator _mediator;
 
     protected Colega(IMediator mediator)
     {
-        this.mediator = mediator;
+        this._mediator = mediator;
     }
 
     public void Comunicar(string mensaje)
     {
-        this.mediator.Enviar(mensaje, this);
+        this._mediator.Enviar(mensaje, this);
     }
 
     public virtual void Recibir(string mensaje)

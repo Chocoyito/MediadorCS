@@ -12,6 +12,7 @@ public class Program
 
         usuario.Comunicar("Hola admin");
         admin.Comunicar("Hola usuario, que tal");
+        usuario.Comunicar("Tengo un problema, podria solucionarmelo?");
 
     }
 }
