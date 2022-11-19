@@ -4,8 +4,8 @@ class Program
     static void Main(string[] args)
     {
         Mediator mediator = new Mediator();
-        IColega usuario = new User(mediator);
-        IColega admin = new UserAdmin(mediator);
+        Colega usuario = new User(mediator);
+        Colega admin = new UserAdmin(mediator);
         
         mediator.AgregarColegas(usuario);
         mediator.AgregarColegas(admin);
