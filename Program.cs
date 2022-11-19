@@ -1,7 +1,7 @@
 ﻿namespace Mediator;
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         Mediator mediator = new Mediator();
         Colega usuario = new User(mediator);
