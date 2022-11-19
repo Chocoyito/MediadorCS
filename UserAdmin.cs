@@ -8,6 +8,6 @@ public class UserAdmin : IColega
     }
     public override void Recibir(string mensaje)
     {
-        Console.WriteLine("Un administrador recibi" + mensaje);
+        Console.WriteLine("Un administrador recibi: " + mensaje);
     }
 }

@@ -1,18 +1,17 @@
 ﻿namespace Mediator;
-
 class Program
 {
     static void Main(string[] args)
     {
         Mediator mediator = new Mediator();
-        IColega oPepe = new User(mediator);
-        IColega oAdmin = new UserAdmin(mediator);
+        IColega usuario = new User(mediator);
+        IColega admin = new UserAdmin(mediator);
         
-        mediator.AgregarColegas(oPepe);
-        mediator.AgregarColegas(oAdmin);
+        mediator.AgregarColegas(usuario);
+        mediator.AgregarColegas(admin);
 
-        oPepe.Comunicar("Hola admin");
-        oAdmin.Comunicar("Hola admin");
+        usuario.Comunicar("Hola admin");
+        admin.Comunicar("Hola usuario, que tal");
 
     }
 }

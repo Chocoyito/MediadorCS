@@ -9,10 +9,7 @@ public abstract class IColega
         this.mediator = mediator;
     }
     
-    public IMediator Mediator
-    {
-        get;
-    }
+    public IMediator Mediator { get; }
 
     public void Comunicar(string mensaje)
     {

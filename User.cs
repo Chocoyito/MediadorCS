@@ -11,3 +11,4 @@ public class User : IColega
         Console.WriteLine("Un usuario recibe: " + mensaje);
     }
 }
+
