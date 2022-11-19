@@ -1,3 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace Mediator;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        Mediator mediator = new Mediator();
+        IColega oPepe = new User(mediator);
+        IColega oAdmin = new UserAdmin(mediator);
+        
+        mediator.AgregarColegas(oPepe);
+        mediator.AgregarColegas(oAdmin);
+
+        oPepe.Comunicar("Hola admin");
+        oAdmin.Comunicar("Hola admin");
+
+    }
+}
+
